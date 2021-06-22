@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>ohmyfood-Menu à la française</title>
+    <meta name="viewport" content="width=device-width" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Shrikhand&display=swap" rel="stylesheet">  
+</head>
+<body>
+  <header>
+    <div id="haut">
+      <div id="haut__retour">
+        <div id="haut__flèche">
+          <a href="Index.html">
+            <i class="fas fa-arrow-left fa-lg" style="color: black"></i>
+          </a>
+        </div>
+        <div id="haut__logo">
+          <img src="images/logo/ohmyfood.png" alt="ohmyfood" height="30">
+        </div>
+      </div>
+    </div>
+  </header> 
+  <main>
+    <div id="Resto">
+      <div class="Resto__image">
+        <img src="images/restaurants/À_la_française.jpg" alt="À la française" class="img">
+      </div>
+      <div id="Resto__formule">
+        <div class="Resto__titre">
+          <div>
+            <h1>À la française</h1>
+          </div>
+          <input type="checkbox" id="la_palette" class="Resto">
+          <label for="la_palette" class="vide">
+            <i class="far fa-heart fa-2x heart"></i>
+          </label>
+          <label for="la_palette" class="coeur">
+            <i class="fas fa-heart fa-2x remplissage"></i>
+          </label>
+        </div>
+        <div class="Resto__txt">
+          <h2>ENTRÉES</h2>
+          <div class="Resto__trait">
+          </div> 
+          <div class="Resto__box" id="box1">
+            <input type="checkbox" id="Resto__box1" class="box">
+            <div class="Resto__contenu">
+              <div class="Resto__menu">
+                <h3 class="Resto__h3">Tartare de poulpe acidulé</h3>
+                <p class="Resto__p">Aux zestes d'orange</p>
+              </div>
+              <label for="Resto__box1" class="Resto__prix">
+                <strong>25€</strong>
+              </label>
+            </div>
+            <div class="Resto__valide entrées">
+              <div class="Resto__check">
+                <i class="fas fa-check-circle check"></i>
+              </div>
+            </div>
+          </div>
+          <div class="Resto__box" id="box2">
+            <input type="checkbox" id="Resto__box2" class="box">
+            <div class="Resto__contenu">
+              <div class="Resto__menu">
+                <h3 class="Resto__h3">Velouté de légumes d'antan</h3>
+                <p class="Resto__p">Carotte, panais, topinambour</p>
+              </div>
+              <label for="Resto__box2" class="Resto__prix">
+                <strong>35€</strong>
+              </label>
+            </div>
+            <div class="Resto__valide entrées">
+              <div class="Resto__check">
+                <i class="fas fa-check-circle check"></i>
+              </div>
+            </div>
+          </div>
+          <div class="Resto__box" id="box3">
+            <input type="checkbox" id="Resto__box3" class="box">
+            <div class="Resto__contenu">
+              <div class="Resto__menu">
+                <h3 class="Resto__h3">Soupe à l'oignon</h3>
+                <p class="Resto__p">Revisitée</p>
+              </div>
+              <label for="Resto__box3" class="Resto__prix">
+                <strong>20€</strong>
+              </label>
+            </div>
+            <div class="Resto__valide entrées">
+              <div class="Resto__check">
+                <i class="fas fa-check-circle check"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Resto__txt">
+          <h2>PLATS</h2>
+          <div class="Resto__trait">
+          </div>
+          <div class="Resto__box" id="box4">
+            <input type="checkbox" id="Resto__box4" class="box">
+            <div class="Resto__contenu">
+              <div class="Resto__menu">
+                <h3 class="Resto__h3">Coquilles Saint-Jacques</h3>
+                <p class="Resto__p">Accompagnées d'une purée de panais</p>
+              </div>
+              <label for="Resto__box4" class="Resto__prix">
+                <strong>40€</strong>
+              </label>
+            </div>
+            <div class="Resto__valide plats">
+              <div class="Resto__check">
+                <i class="fas fa-check-circle check"></i>
+              </div>
+            </div>
+          </div>
+          <div class="Resto__box" id="box5">
+            <input type="checkbox" id="Resto__box5" class="box">
+            <div class="Resto__contenu">
+              <div class="Resto__menu">
+                <h3 class="Resto__h3">Magret de canard</h3>
+                <p class="Resto__p">Et parmentier de pommes de terre</p>
+              </div>
+              <label for="Resto__box5" class="Resto__prix">
+                <strong>35€</strong>
+              </label>
+            </div>
+            <div class="Resto__valide plats">
+              <div class="Resto__check">
+                <i class="fas fa-check-circle check"></i>
+              </div>
+            </div>
+          </div>
+          <div class="Resto__box" id="box6">
+            <input type="checkbox" id="Resto__box6" class="box">
+            <div class="Resto__contenu">
+              <div class="Resto__menu">
+                <h3 class="Resto__h3">Pigeonneau d’Ille-et-Vilaine</h3>
+                <p class="Resto__p">Sur son lit de gnocchis aux légumes</p>
+              </div>
+              <label for="Resto__box6" class="Resto__prix">
+                <strong>44€</strong>
+              </label>
+            </div>
+            <div class="Resto__valide plats">
+              <div class="Resto__check">
+                <i class="fas fa-check-circle check"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Resto__txt">
+          <h2>DESSERTS</h2>
+          <div class="Resto__trait">
+          </div>
+          <div class="Resto__box" id="box7">
+            <input type="checkbox" id="Resto__box7" class="box">
+            <div class="Resto__contenu">
+              <div class="Resto__menu">
+                <h3 class="Resto__h3">Pétales de violettes glacés</h3>
+                <p class="Resto__p">Et purée de noisettes</p>
+              </div>
+              <label class="Resto__prix">
+                <strong>18€</strong>
+              </label>
+            </div>
+            <div class="Resto__valide desserts">
+              <div class="Resto__check">
+                <i class="fas fa-check-circle check"></i>
+              </div>
+            </div>
+          </div>
+          <div class="Resto__box" id="box8">
+            <input type="checkbox" id="Resto__box8" class="box">
+            <div class="Resto__contenu">
+              <div class="Resto__menu">
+                <h3 class="Resto__h3">Fondant au chocolat</h3>
+                <p class="Resto__p">Revisité</p>
+              </div>
+              <label for="Resto__box8" class="Resto__prix">
+                <strong>22€</strong>
+              </label>
+            </div>
+            <div class="Resto__valide desserts">
+              <div class="Resto__check">
+                <i class="fas fa-check-circle check"></i>
+              </div>
+            </div>
+          </div>
+          <div class="Resto__box" id="box9">
+            <input type="checkbox" id="Resto__box9" class="box">
+            <div class="Resto__contenu">
+              <div class="Resto__menu">
+                <h3 class="Resto__h3">Millefeuille croustillant</h3>
+                <p class="Resto__p">Myrtilles et pâte d’amande</p>
+              </div>
+              <label for="Resto__box9" class="Resto__prix">
+                <strong>23€</strong>
+              </label>
+            </div>
+            <div class="Resto__valide desserts">
+              <div class="Resto__check">
+                <i class="fas fa-check-circle check"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="bouton">
+          <a id="bouton__explorer" href="page.html">Commander</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div id="pied">
+      <div id="pied__contact">
+        <div id="pied__logo">
+          <img src="images/logo/ohmyfood.png" alt="ohmyfood" height="20">
+        </div>
+        <div id="gras">
+          <span class="pied__lien">
+            <i class="fas fa-utensils fa-sm ustensile"></i>
+            <a href="proposer.html" class="pied__lien"><strong>Proposer votre menu</strong></a>
+          </span>
+          <span class="pied__lien">
+            <i class="fas fa-hands-helping fa-sm mains"></i>
+            <a href="partenaire.html" class="pied__lien"><strong>Devenir partenaire</strong></a>
+          </span>
+        </div>
+        <div id="normal">
+          <a href="Mentions_légales.html" class="pied__lien">Mentions légales</a>
+          <a href="mailto:contact@ohmyfood.fr" class="pied__lien">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
