@@ -66,12 +66,17 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: lightgray;
-  box-shadow: 0px -3px 2px grey;
+  height: 60px;
+  background-color: #eaeaea;
+  box-shadow: 0px -5px 2px #dcdcdc;
   margin-top: 20px;
 }
 #ville__loc #ville__map {
   padding-right: 20px;
+  margin-left: -10%;
+}
+#ville__loc p {
+  font-size: 22px;
 }
 
 #map {
@@ -87,40 +92,44 @@ body {
 #oh__menu {
   display: flex;
   flex-direction: column;
-  background-color: #f2f2f2;
+  background-color: #f6f6f6;
   text-align: center;
   width: 100%;
   align-items: center;
+  padding-top: 20px;
 }
 #oh__menu #oh__menu--titre {
   text-align: center;
   width: 80%;
-  font-size: 26px;
   margin-bottom: 0px;
+  font-size: 36px;
+  font-weight: max;
 }
 #oh__menu #oh__menu--txt {
   text-align: center;
-  font-size: 20px;
+  font-size: 24px;
+  font-weight: 400;
   width: 90%;
 }
 
 #bouton {
-  width: 200px;
-  height: 40px;
+  width: 60%;
+  height: 70px;
   background: linear-gradient(#FF79DA, #9356DC);
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 80px;
-  border-radius: 20px;
-  line-height: 35px;
-  margin-top: 50px;
-  text-align: center;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
 }
 #bouton__explorer {
   text-decoration: none;
   color: white;
-  font-weight: bold;
-  font-size: 16px;
+  font-weight: 500;
+  font-size: 22px;
 }
 
 #bouton:hover {
@@ -140,10 +149,14 @@ main {
   display: flex;
   flex-direction: column;
   background-color: white;
+  padding-left: 5%;
+  height: 500px;
+  padding-top: 50px;
 }
 #fonct .fonct__list {
   display: flex;
   margin-bottom: 20px;
+  margin-top: 5px;
   align-items: center;
   flex-direction: row-reverse;
   justify-content: flex-end;
@@ -151,15 +164,16 @@ main {
 
 .fonct__list--txt {
   display: flex;
-  width: 250px;
-  height: 50px;
+  width: 100%;
+  height: 100px;
   background-color: #f2f2f2;
   margin-left: -15px;
   order: 1;
   margin-right: -15px;
   align-items: center;
-  border-radius: 15px;
+  border-radius: 25px;
   font-weight: bold;
+  font-size: 22px;
   box-shadow: 5px 5px 5px lightgray;
 }
 
@@ -171,7 +185,7 @@ main {
   text-align: center;
   line-height: 30px;
   color: white;
-  font-weight: bold;
+  font-weight: 400;
   order: 2;
 }
 
@@ -186,14 +200,20 @@ main {
 
 #mobile {
   color: gray;
+  font-size: 22px;
+  padding: 15px;
 }
 
 #list {
   color: gray;
+  font-size: 22px;
+  padding: 15px;
 }
 
 #store {
   color: #9356DC;
+  font-size: 22px;
+  padding: 15px;
 }
 
 #Restaurants {
@@ -207,18 +227,32 @@ main {
   padding-bottom: 80px;
   padding-top: 15px;
 }
+#Restaurants h1 {
+  font-size: 30px;
+}
 
 .Resto__titre {
   width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-left: 2%;
+}
+.Resto__titre h2 {
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+.Resto__titre p {
+  font-size: 20px;
+  margin-top: 5px;
 }
 .Resto__titre .vide {
   display: block;
 }
 .Resto__titre .vide .heart {
-  color: lightgray;
+  color: black;
+  padding-bottom: 20px;
+  padding-right: 15px;
 }
 .Resto__titre .coeur {
   display: none;
@@ -227,6 +261,8 @@ main {
   background: linear-gradient(#9356DC, #FF79DA);
   color: transparent;
   -webkit-background-clip: text;
+  padding-bottom: 20px;
+  padding-right: 15px;
 }
 
 .Restaurants__list {
@@ -269,7 +305,7 @@ main {
 .Restaurants__list--Nouveau {
   background-color: #99E2D0;
   position: absolute;
-  right: 10%;
+  right: 3%;
   transform: translate(0, -140px);
   font-weight: bold;
   color: green;
@@ -299,10 +335,12 @@ footer {
   display: flex;
   flex-direction: column;
   color: white;
-  width: 95%;
-  height: 200px;
+  width: 93%;
+  height: 300px;
   justify-content: flex-start;
-  padding-left: 5%;
+  padding-left: 7%;
+  font-size: 20px;
+  padding-top: 25px;
 }
 #pied__contact #pied__logo {
   filter: invert(100%);
@@ -327,10 +365,13 @@ footer {
 
 #ustensile {
   color: white;
+  padding-right: 20px;
+  padding-top: 25px;
 }
 
 #mains {
   color: white;
+  padding-right: 10px;
 }
 
 #haut {
@@ -338,7 +379,7 @@ footer {
   width: 100%;
   justify-content: center;
   align-items: center;
-  height: 50px;
+  height: 60px;
 }
 #haut__retour {
   display: flex;
@@ -346,12 +387,12 @@ footer {
   align-items: center;
 }
 #haut__retour #haut__flèche {
-  width: 20%;
+  width: 10%;
   margin-left: 5%;
 }
 #haut__retour #haut__logo {
-  width: 80%;
-  margin-left: 15%;
+  width: 90%;
+  margin-left: 20%;
 }
 
 #Resto {
@@ -367,15 +408,21 @@ footer {
 #Resto__formule {
   background-color: #f2f2f2;
   width: 100%;
-  margin-top: -30px;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  margin-top: -50px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+#Resto__formule .Resto__titre {
+  padding-top: 50px;
+  height: 40px;
+}
 #Resto__formule h1 {
   font-family: "Shrikhand", sans-serif;
+  font-size: 36px;
+  padding-bottom: 20px;
 }
 #Resto__formule .Resto__txt {
   display: flex;
@@ -384,18 +431,20 @@ footer {
   align-items: flex-start;
 }
 #Resto__formule .Resto__txt h2 {
-  margin-top: 50px;
+  margin-top: 40px;
+  margin-bottom: 0px;
+  font-weight: 400;
 }
 #Resto__formule .Resto__txt .Resto__trait {
-  border-top: 3px solid #99E2D0;
+  border-top: 4px solid #99E2D0;
   width: 50px;
   height: 1px;
-  margin-top: 15px;
+  margin-top: 5px;
 }
 #Resto__formule .Resto__txt .Resto__box {
   display: flex;
   width: 100%;
-  height: 60px;
+  height: 80px;
   border-radius: 15px;
   box-shadow: 5px 5px 5px lightgray;
   align-items: center;
@@ -415,6 +464,8 @@ footer {
   white-space: nowrap;
   overflow: hidden;
   width: 100%;
+  margin-bottom: 5px;
+  font-size: 22px;
 }
 #Resto__formule .Resto__txt .Resto__box .Resto__contenu .Resto__menu .Resto__p {
   margin-top: 5px;
@@ -422,14 +473,14 @@ footer {
   white-space: nowrap;
   overflow: hidden;
   width: 90%;
-  font-size: 15px;
+  font-size: 18px;
 }
 #Resto__formule .Resto__txt .Resto__box .Resto__contenu .Resto__prix {
-  margin-top: 30px;
+  margin-top: 55px;
 }
 #Resto__formule .Resto__txt .Resto__box .Resto__valide {
   width: 15%;
-  height: 60px;
+  height: 80px;
   background-color: #99E2D0;
   display: none;
   align-items: center;
@@ -441,6 +492,9 @@ footer {
 }
 #Resto__formule .Resto__txt .Resto__box .Resto__valide .check {
   color: white;
+}
+#Resto #bouton {
+  margin-top: 80px;
 }
 
 @keyframes fadein {
@@ -599,22 +653,6 @@ input {
   object-fit: cover;
 }
 
-h1 {
-  font-size: 28px;
-}
-
-h2 {
-  font-size: 20px;
-  font-weight: normal;
-  margin-bottom: -10px;
-}
-
-h3 {
-  margin-bottom: 0px;
-  margin-top: 5px;
-  font-size: 18px;
-}
-
 @media (max-width: 999px) and (min-width: 700px) {
   #principal {
     display: flex;
@@ -626,11 +664,14 @@ h3 {
     flex-direction: column;
     width: 50%;
     align-items: center;
-    height: 400px;
   }
   #principal #fonct {
-    width: 40%;
-    padding-left: 10%;
+    width: 45%;
+    padding-left: 5%;
+    padding-top: 20px;
+  }
+  #principal #fonct .fonct__list {
+    width: 90%;
   }
 
   #Restaurants {
@@ -640,16 +681,16 @@ h3 {
     width: 90%;
     padding-right: 5%;
     justify-content: space-between;
+    margin-top: 0px;
+  }
+  #Restaurants h1 {
+    width: 100%;
   }
   #Restaurants #Restau {
     width: 100%;
   }
   #Restaurants .Restaurants__list {
     width: 47.5%;
-  }
-
-  #Nouveau {
-    right: 55%;
   }
 
   #Resto__formule {
@@ -661,17 +702,21 @@ h3 {
     width: 30%;
     height: 400px;
   }
+  #Resto__formule #bouton {
+    width: 20%;
+  }
 
   #pied__contact {
     flex-direction: row;
     flex-wrap: wrap;
-    height: 150px;
+    height: 200px;
   }
   #pied__contact #gras {
     width: 50%;
   }
   #pied__contact #normal {
     width: 50%;
+    padding-top: 25px;
   }
 
   .Resto__valide {
@@ -705,12 +750,14 @@ h3 {
     flex-direction: column;
     width: 100%;
     align-items: center;
-    height: 400px;
+    height: 600px;
   }
   #pc #principal #fonct {
-    width: 80%;
-    padding-left: 20%;
-    padding-top: 50px;
+    width: 90%;
+    padding-left: 10%;
+  }
+  #pc #principal #fonct .fonct__list {
+    width: 90%;
   }
 
   #Restaurants {
@@ -718,7 +765,7 @@ h3 {
     flex-wrap: nowrap;
     width: 45%;
     padding-right: 5%;
-    margin-top: 18px;
+    margin-top: 15px;
     justify-content: space-around;
   }
   #Restaurants #Restau {
@@ -726,10 +773,6 @@ h3 {
   }
   #Restaurants .Restaurants__list {
     width: 100%;
-  }
-
-  .Nouveau {
-    right: 0%;
   }
 
   #Resto__formule {
@@ -741,17 +784,21 @@ h3 {
     width: 30%;
     height: 400px;
   }
+  #Resto__formule #bouton {
+    width: 20%;
+  }
 
   #pied__contact {
     flex-direction: row;
     flex-wrap: wrap;
-    height: 150px;
+    height: 200px;
   }
   #pied__contact #gras {
     width: 50%;
   }
   #pied__contact #normal {
     width: 50%;
+    padding-top: 25px;
   }
 
   .Resto__valide {
